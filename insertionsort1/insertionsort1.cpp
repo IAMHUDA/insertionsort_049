@@ -52,3 +52,21 @@ void insertionsort() {      //prosedur insertionsort
 		}
 	}
 }
+void display() {     //prosedur display
+	cout << endl;    //output baris kosong
+	cout << "\n===============================" << endl;   //output ke layar
+	cout << "element array yang telah tersusun" << endl;
+	cout << "=================================" << endl;
+
+	for (int j = 0; j < n; j++) {    //looping dengan j dimulai dari 0 hingfga n-1
+		cout << arr[j] << endl;        //output ke layar
+	}
+	cout << endl;
+}
+int main()
+{
+	input();              //input baris kosong
+	insertionsort();      //memanggil insertionsort
+	display();            //memanggil display  
+
+}
